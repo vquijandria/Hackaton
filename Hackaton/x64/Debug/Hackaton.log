@@ -1,4 +1,0 @@
-﻿  MyForm.cpp
-d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\Hackaton\MyForm.cpp(6,1): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
-  MyForm.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  Hackaton.vcxproj -> d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\x64\Debug\Hackaton.exe

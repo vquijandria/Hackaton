@@ -1,0 +1,8 @@
+D:\Home\Desktop\Uni\Algoritmos 2\Hackaton1\Hackaton1\x64\Debug\Hackaton1.vcxproj.AssemblyReference.cache
+D:\Home\Desktop\Uni\Algoritmos 2\Hackaton1\Hackaton1\x64\Debug\Hackaton1.vcxproj.SuggestedBindingRedirects.cache
+D:\Home\Desktop\Uni\Algoritmos 2\Hackaton1\Hackaton1\x64\Debug\Hackaton1.MyForm.resources
+D:\Home\Desktop\Uni\Algoritmos 2\Hackaton1\Hackaton1\x64\Debug\Hackaton1.vcxproj.GenerateResource.cache
+C:\Users\vquij\Documents\UPC\2023-1\Algoritmos\Hackaton\Hackaton1\x64\Debug\Hackaton1.vcxproj.AssemblyReference.cache
+C:\Users\vquij\Documents\UPC\2023-1\Algoritmos\Hackaton\Hackaton1\x64\Debug\Hackaton1.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\vquij\Documents\UPC\2023-1\Algoritmos\Hackaton\Hackaton1\x64\Debug\Hackaton1.MyForm.resources
+C:\Users\vquij\Documents\UPC\2023-1\Algoritmos\Hackaton\Hackaton1\x64\Debug\Hackaton1.vcxproj.GenerateResource.cache

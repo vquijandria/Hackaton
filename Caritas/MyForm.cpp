@@ -5,6 +5,5 @@ void main()
 {
 	Application::EnableVisualStyles();
 	Application::Run(gcnew Caritas::MyForm());
-	Application::SetCompatibleTextRenderingDefault(false);
 }
 

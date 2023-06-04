@@ -129,6 +129,7 @@
     <ClInclude Include="Cara3.h" />
     <ClInclude Include="Carita.h" />
     <ClInclude Include="Circulo.h" />
+    <ClInclude Include="Figura.h" />
     <ClInclude Include="Linea.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>

@@ -14,6 +14,8 @@ namespace Hackaton {
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
+		Carita1* carita1;
+		Graphics^ g;
 	public:
 		MyForm(void)
 		{
@@ -42,47 +44,24 @@ namespace Hackaton {
 		virtual void OnPaint(PaintEventArgs^ e) override
 		{
 			__super::OnPaint(e);
-
 			Graphics^ g = e->Graphics;
-			Pen^ pen = gcnew Pen(Color::Black);
+			
+			// FIGURA 1 -----------
+			
 
-			int centerX = this->ClientSize.Width / 10;  // Coordenada X del centro del círculo
-			int centerY = this->ClientSize.Height / 2; // Coordenada Y del centro del círculo
-			int radius = 100;                          // Radio del círculo
-
-			int x = centerX - radius; // Coordenada X del punto inicial del círculo
-			int y = centerY - radius; // Coordenada Y del punto inicial del círculo
-
-			// Dibujar el círculo
-			g->DrawEllipse(pen, x, y, radius * 2, radius * 2);
-
-			// Dibujar los triángulos
-			Point triangle1_p1(centerX - 40, centerY - radius + 60);
-
-			Point triangle1_p2(centerX - 40, centerY - radius + 100);
-			Point triangle1_p3(centerX - 10, centerY - radius + 80);
-			array<Point>^ triangle1_points = { triangle1_p1, triangle1_p2, triangle1_p3 };
-			g->DrawPolygon(pen, triangle1_points);
-
-			Point triangle2_p1(centerX + 10, centerY - radius + 80);
-			Point triangle2_p2(centerX + 40, centerY - radius + 100);
-			Point triangle2_p3(centerX + 40, centerY - radius + 60);
-			array<Point>^ triangle2_points = { triangle2_p1, triangle2_p2, triangle2_p3 };
-			g->DrawPolygon(pen, triangle2_points);
-
-			// Dibujar la raya
-			g->DrawLine(pen, centerX - 40, centerY + 20, centerX + 40, centerY + 20);
-
-			// PUNTO INTERMEDIARIO --------
+			// FIGURA 2 -----------
 
 			Pen^ pen1 = gcnew Pen(Color::Blue);
 
-			int centerX1 = this->ClientSize.Width / 2;  // Coordenada X del centro del círculo
-			int centerY1 = this->ClientSize.Height / 2; // Coordenada Y del centro del círculo
+			int centerX1 = 700;  // Coordenada X del centro del círculo
+			int centerY1 = 320;  // Coordenada Y del centro del círculo
 			int radius1 = 100;                          // Radio del círculo
+			int radiusC1 = 10;                          // Radio del circulo de la boca
 
 			int x1 = centerX1 - radius1; // Coordenada X del punto inicial del círculo
 			int y1 = centerY1 - radius1; // Coordenada Y del punto inicial del círculo
+			int xc1 = 690;
+			int yc1 = 350;
 
 			// Dibujar el círculo
 			g->DrawEllipse(pen1, x1, y1, radius1 * 2, radius1 * 2);
@@ -101,8 +80,40 @@ namespace Hackaton {
 			g->DrawPolygon(pen1, triangle3_points);
 
 			// Dibujar el circulo de la boca
-			g->DrawLine(pen1, centerX1 - 40, centerY1 + 20, centerX1 + 40, centerY1 + 20);
+			g->DrawEllipse(pen1, xc1, yc1, radiusC1 * 4, radiusC1 * 4);
 
+			// FIGURA 3 -----------
+
+			Pen^ pen2 = gcnew Pen(Color::Orange);
+
+			int centerX2 = 1100;  // Coordenada X del centro del círculo
+			int centerY2 = 320;  // Coordenada Y del centro del círculo
+			int radius2 = 100;                          // Radio del círculo
+			int radiusC2 = 10;                          // Radio del circulo de la boca
+
+			int x2 = centerX2 - radius2; // Coordenada X del punto inicial del círculo
+			int y2 = centerY2 - radius2; // Coordenada Y del punto inicial del círculo
+			int xc2 = 1060;
+			int yc2 = 350;
+
+			// Dibujar el círculo
+			g->DrawEllipse(pen2, x2, y2, radius2 * 2, radius2 * 2);
+
+			// Dibujar los triángulos
+			Point triangle5_p1(centerX2 - 40, centerY2 - radius2 + 60);
+			Point triangle5_p2(centerX2 - 40, centerY2 - radius2 + 100);
+			Point triangle5_p3(centerX2 - 10, centerY2 - radius2 + 80);
+			array<Point>^ triangle5_points = { triangle5_p1, triangle5_p2, triangle5_p3 };
+			g->DrawPolygon(pen2, triangle5_points);
+
+			Point triangle6_p1(centerX2 + 10, centerY2 - radius2 + 80);
+			Point triangle6_p2(centerX2 + 40, centerY2 - radius2 + 100);
+			Point triangle6_p3(centerX2 + 40, centerY2 - radius2 + 60);
+			array<Point>^ triangle6_points = { triangle6_p1, triangle6_p2, triangle6_p3 };
+			g->DrawPolygon(pen2, triangle6_points);
+
+			// Dibujar el circulo de la boca
+			g->DrawRectangle(pen2, xc2, yc2, radiusC2 * 7, radiusC2 * 3);
 		}
 
 
@@ -136,7 +147,8 @@ namespace Hackaton {
 
 		}
 #pragma endregion
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
+	{
 	}
 	};
 }

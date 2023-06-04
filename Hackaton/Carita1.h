@@ -11,11 +11,11 @@ public:
 	}
 	void mostrar(Graphics^ g)
 	{
-		/*
+		//FIGURA 1 
 		Pen^ pen = gcnew Pen(Color::Black);
 
-		int centerX = this->ClientSize.Width / 2;  // Coordenada X del centro del círculo
-		int centerY = this->ClientSize.Height / 2; // Coordenada Y del centro del círculo
+		int centerX = 300;  // Coordenada X del centro del círculo
+		int centerY = 320;  // Coordenada Y del centro del círculo
 		int radius = 100;                          // Radio del círculo
 
 		int x = centerX - radius; // Coordenada X del punto inicial del círculo
@@ -26,6 +26,7 @@ public:
 
 		// Dibujar los triángulos
 		Point triangle1_p1(centerX - 40, centerY - radius + 60);
+
 		Point triangle1_p2(centerX - 40, centerY - radius + 100);
 		Point triangle1_p3(centerX - 10, centerY - radius + 80);
 		array<Point>^ triangle1_points = { triangle1_p1, triangle1_p2, triangle1_p3 };
@@ -39,6 +40,5 @@ public:
 
 		// Dibujar la raya
 		g->DrawLine(pen, centerX - 40, centerY + 20, centerX + 40, centerY + 20);
-		*/
 	}
 };

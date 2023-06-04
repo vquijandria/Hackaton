@@ -23,5 +23,20 @@
     <ClInclude Include="MyForm.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Carita1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Carita2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Carita3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caritas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Figura.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

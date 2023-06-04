@@ -124,6 +124,11 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Carita1.h" />
+    <ClInclude Include="Carita2.h" />
+    <ClInclude Include="Carita3.h" />
+    <ClInclude Include="Caritas.h" />
+    <ClInclude Include="Figura.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

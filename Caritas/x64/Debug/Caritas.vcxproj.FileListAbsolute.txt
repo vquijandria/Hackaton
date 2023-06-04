@@ -1,4 +1,0 @@
-d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\Caritas\x64\Debug\Caritas.vcxproj.AssemblyReference.cache
-d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\Caritas\x64\Debug\Caritas.vcxproj.SuggestedBindingRedirects.cache
-d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\Caritas\x64\Debug\Caritas.MyForm.resources
-d:\Home\Desktop\Uni\Algoritmos 2\Hackaton\Caritas\x64\Debug\Caritas.vcxproj.GenerateResource.cache

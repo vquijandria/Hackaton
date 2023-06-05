@@ -33,7 +33,7 @@ void Caritas::mostrar(Graphics^ g)
 {
 	for (int i = 0; i < arrf->size();i++)
 	{
-		//darrf->at(i)->borrar(g);
+		arrf->at(i)->borrar(g);
 		arrf->at(i)->dibujar(g);
 	}
 }
@@ -44,14 +44,14 @@ void Caritas::agregarFigura(Graphics^ g, char op)
 	switch (op)
 	{
 	case 'D':
-		//aplicamos el polimorfismo
-		fig = new Carita1(300, 150, 60);
+		fig = new Carita1(700, 350, 60);
+		//g->Clear(Color::White);
 		break;
 	case 'F':
 		fig = new Carita2(700, 150, 60);
 		break;
 	case 'G':
-		fig = new Carita3(1100, 150, 60);
+		fig = new Carita3(700, 150, 60);
 		break;
 	default:
 		break;

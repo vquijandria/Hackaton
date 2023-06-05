@@ -24,9 +24,9 @@ Carita1::~Carita1()
 void Carita1::dibujar(Graphics^ g)
 {
 	//FIGURA 1 
-	Pen^ pen = gcnew Pen(Color::Black);
+	Pen^ pen = gcnew Pen(Color::Blue);
 
-	int centerX = 300;  // Coordenada X del centro del círculo
+	int centerX = 700;  // Coordenada X del centro del círculo
 	int centerY = 320;  // Coordenada Y del centro del círculo
 	int radius = 100;                          // Radio del círculo
 
@@ -55,5 +55,23 @@ void Carita1::dibujar(Graphics^ g)
 }
 void Carita1::borrar(Graphics^ g)
 {
+	//FIGURA 2
+	Pen^ pen = gcnew Pen(Color::White);
+	int radiusC1 = 10;                          // Radio del circulo de la boca
+	int xc1 = 690;
+	int yc1 = 350;
 
+	// Dibujar el circulo de la boca
+	g->DrawEllipse(pen, xc1, yc1, radiusC1 * 4, radiusC1 * 4);
+
+	//FIGURA 3
+	Pen^ pen1 = gcnew Pen(Color::White);
+	int radiusC2 = 10;                          // Radio del circulo de la boca
+	int xc2 = 670;
+	int yc2 = 350;
+
+	// Dibujar el circulo de la boca
+	g->DrawRectangle(pen1, xc2, yc2, radiusC2 * 7, radiusC2 * 3);
+
+	
 }

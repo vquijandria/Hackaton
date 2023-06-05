@@ -59,4 +59,22 @@ void Carita2::dibujar(Graphics^ g)
 void Carita2::borrar(Graphics^ g)
 {
 
+	//FIGURA 1 
+	Pen^ pen = gcnew Pen(Color::White);
+	int centerX = 700;  // Coordenada X del centro del círculo
+	int centerY = 320;  // Coordenada Y del centro del círculo
+
+	// Dibujar la raya
+	g->DrawLine(pen, centerX - 40, centerY + 20, centerX + 40, centerY + 20);
+
+	//FIGURA 3
+	Pen^ pen1 = gcnew Pen(Color::White);
+
+	int radiusC2 = 10;                          // Radio del circulo de la boca
+	int xc2 = 670;
+	int yc2 = 350;
+
+	// Dibujar el circulo de la boca
+	g->DrawRectangle(pen1, xc2, yc2, radiusC2 * 7, radiusC2 * 3);
+
 }

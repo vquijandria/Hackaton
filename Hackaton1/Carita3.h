@@ -24,15 +24,15 @@ Carita3::~Carita3()
 void Carita3::dibujar(Graphics^ g)
 {
 	//FIGURA 3
-	Pen^ pen = gcnew Pen(Color::Orange);
+	Pen^ pen = gcnew Pen(Color::Blue);
 
-	int centerX2 = 1100;  // Coordenada X del centro del círculo
+	int centerX2 = 700;  // Coordenada X del centro del círculo
 	int centerY2 = 320;  // Coordenada Y del centro del círculo
 	int radius2 = 100;                          // Radio del círculo
 	int radiusC2 = 10;                          // Radio del circulo de la boca
 	int x2 = centerX2 - radius2; // Coordenada X del punto inicial del círculo
 	int y2 = centerY2 - radius2; // Coordenada Y del punto inicial del círculo
-	int xc2 = 1060;
+	int xc2 = 670;
 	int yc2 = 350;
 
 	// Dibujar el círculo
@@ -57,4 +57,21 @@ void Carita3::dibujar(Graphics^ g)
 void Carita3::borrar(Graphics^ g)
 {
 
+	//FIGURA 1 
+	Pen^ pen = gcnew Pen(Color::White);
+	int centerX = 700;  // Coordenada X del centro del círculo
+	int centerY = 320;  // Coordenada Y del centro del círculo
+
+	// Dibujar la raya
+	g->DrawLine(pen, centerX - 40, centerY + 20, centerX + 40, centerY + 20);
+
+	//FIGURA 2
+	Pen^ pen1 = gcnew Pen(Color::White);
+	int radius1 = 100;                          // Radio del círculo
+	int radiusC1 = 10;                          // Radio del circulo de la boca
+	int xc1 = 690;
+	int yc1 = 350;
+
+	// Dibujar el circulo de la boca
+	g->DrawEllipse(pen1, xc1, yc1, radiusC1 * 4, radiusC1 * 4);
 }

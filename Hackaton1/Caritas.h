@@ -1,33 +1,60 @@
 #pragma once
-#include "Carita1.h"
-#include "Carita2.h"
-#include "Carita3.h"
+#include"Carita1.h"
+#include"Carita2.h"
+#include"Carita3.h"
+#include<vector>
+
+using namespace System::Drawing;
+using namespace System;
+using namespace std;
 
 class Caritas
 {
 private:
-	Carita1* carita1;
-	Carita2* carita2;
-	Carita3* carita3;
+	vector<Figura*>* arrf;
 public:
-	Caritas()
-	{
-		carita1 = new Carita1();
-		carita2 = new Carita2();
-		carita3 = new Carita3();
-	}
-	~Caritas()
-	{
-		delete carita1;
-		delete carita2;
-		delete carita3;
-	}
-	void mostrar(Graphics^ g)
-	{
-		carita1->mostrar(g);
-		carita2->mostrar(g);
-		carita3->mostrar(g);
-	}
+	Caritas();
+	~Caritas();
 
-
+	void mostrar(Graphics^ g);
+	void agregarFigura(Graphics^ g, char op);
 };
+
+Caritas::Caritas()
+{
+	arrf = new vector<Figura*>();
+}
+
+Caritas::~Caritas()
+{
+	delete arrf;
+}
+void Caritas::mostrar(Graphics^ g)
+{
+	for (int i = 0; i < arrf->size();i++)
+	{
+		//darrf->at(i)->borrar(g);
+		arrf->at(i)->dibujar(g);
+	}
+}
+void Caritas::agregarFigura(Graphics^ g, char op)
+{
+	Random r;
+	Figura* fig;//declaramos un objeto de tipo figura
+	switch (op)
+	{
+	case 'D':
+		//aplicamos el polimorfismo
+		fig = new Carita1(300, 150, 60);
+		break;
+	case 'F':
+		fig = new Carita2(700, 150, 60);
+		break;
+	case 'G':
+		fig = new Carita3(1100, 150, 60);
+		break;
+	default:
+		break;
+	}
+	arrf->push_back(fig);//fig es variable polimórfica
+}

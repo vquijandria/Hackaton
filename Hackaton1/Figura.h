@@ -5,16 +5,22 @@ using namespace System::Drawing;
 class Figura
 {
 protected:
+	//atributos de la clase
 	int x, y;
-	int ancho, alto;
-	int dx;
 public:
-	Figura()
-	{
-		x = 20;
-		alto = ancho = 40;
-		Random r;
-		dx = r.Next(5, 16);
-		System::Threading::Thread::Sleep(10);
-	}
+	Figura(int x, int y);
+	~Figura();
+	virtual void borrar(Graphics^ g) { }
+	virtual void dibujar(Graphics^ g) { }
 };
+
+Figura::Figura(int x, int y)
+{
+	//VELOCIDAD
+	this->x = x;
+	this->y = y;
+}
+
+Figura::~Figura()
+{
+}
